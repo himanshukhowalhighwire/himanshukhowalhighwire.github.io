@@ -1,5 +1,11 @@
-<script>
-  if (window.location.pathname !== '/') {
-    window.location.replace('/');
-  }
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Redirect all paths to the main index.html
+      history.replaceState(null, null, window.location.pathname);
+      window.location.href = "/";
+    </script>
+  </head>
+  <body></body>
+</html>

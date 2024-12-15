@@ -2,9 +2,8 @@
 <html>
   <head>
     <script>
-      // Redirect all paths to the main index.html
-      history.replaceState(null, null, window.location.pathname);
-      window.location.href = "/";
+      // Redirect to the correct path and let React Router handle it
+      window.location.replace(window.location.origin + "/#" + window.location.pathname);
     </script>
   </head>
   <body></body>
